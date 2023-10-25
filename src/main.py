@@ -1,9 +1,8 @@
 import matematyka
+import sortowanie
 
-a = 10
-b = 5
+my_list = [64, 34, 25, 12, 22, 11, 90]
 
-print(f"{a} + {b} = {matematyka.dodaj(a, b)}")
-print(f"{a} - {b} = {matematyka.odejmij(a, b)}")
-print(f"{a} * {b} = {matematyka.iloczyn(a, b)}")
-print(f"{a} / {b} = {matematyka.iloraz(a, b)}")
+sortowanie.bubble_sort(my_list)
+
+print(my_list)
