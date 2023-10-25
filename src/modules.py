@@ -1,3 +1,4 @@
+# 25.10.2023
 def dodaj(a, b):
     return a + b
 
