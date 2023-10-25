@@ -17,3 +17,17 @@ def bubble_sort(arr):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr.pop(len(arr) // 2)
+        left = []
+        right = []
+        for i in arr:
+            if i < pivot:
+                left.append(i)
+            else:
+                right.append(i)
+        return quick_sort(left) + [pivot] + quick_sort(right)
